@@ -1,28 +1,44 @@
-<form method="post" action="submit.php">
-  <label for="tag">Lesson:</label>
-  <select name="tag" id="tag" required>
-  <option value="">-- Select --</option>
-  <option value="chemistry">Chemistry</option>
-  <option value="physics">Physics</option>
-  <option value="calculus">Calculus</option>
-  <option value="geometry">Geometry</option>
-  <option value="dm">Discrete Mathematics</option>
-  </select>
-  <fieldset>
-  <legend>Type:</legend>
-  <label>
-    <input type="radio" name="type" value="option1" checked>
-    exam
-  </label><br>
-  <label>
-    <input type="radio" name="type" value="option2">
-    other
-  </label>
-  </fieldset>
-  Total:  <input type="number" name="total" required><br>
-  Correct:  <input type="number" name="correct" required><br>
-  Incorrect:  <input type="number" name="incorrect" required><br>
-  Time(min):  <input type="number" name="time"><br>
-  Notes: <input type="text" name="entry_text"><br>
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<form action="submit.php" method="post">
+  <label>Lesson:</label>
+  <select name="lesson">
+    <option value="chemistry">Chemistry</option>
+    <option value="physics">Physics</option>
+    <option value="calculus">Calculus</option>
+    <option value="geometry">Geometry</option>
+    <option value="dm">Discrete Math</option>
+  </select><br>
+
+  <label>Type:</label>
+  <select name="type">
+     <option value="exam">Exam</option>
+     <option value="other">Other</option>
+  </select><br>
+
+  <label>Total Questions:</label>
+  <input type="number" name="total" required><br>
+
+  <label>Correct:</label>
+  <input type="number" name="correct" required><br>
+
+  <label>Incorrect:</label>
+  <input type="number" name="incorrect" required><br>
+
+  <label>Time (min):</label>
+  <input type="number" name="time" required><br>
+
+  <label>Note: </label>
+  <input type="text" name="note" required><br>
+
+
   <input type="submit" value="Submit">
 </form>
+
+</body>
+</html> 
