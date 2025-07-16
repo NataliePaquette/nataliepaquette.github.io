@@ -1,13 +1,28 @@
 <form method="post" action="submit.php">
-  Name: <input type="text" name="name" required><br>
-  Age:  <input type="number" name="age" required><br>
-  Notes: <input type="text" name="entry_text"><br>
-  <label for="tag">Choose a tag:</label>
+  <label for="tag">Lesson:</label>
   <select name="tag" id="tag" required>
   <option value="">-- Select --</option>
-  <option value="news">News</option>
-  <option value="sports">Sports</option>
-  <option value="tech">Tech</option>
+  <option value="chemistry">Chemistry</option>
+  <option value="physics">Physics</option>
+  <option value="calculus">Calculus</option>
+  <option value="geometry">Geometry</option>
+  <option value="dm">Discrete Mathematics</option>
   </select>
+  <fieldset>
+  <legend>Type:</legend>
+  <label>
+    <input type="radio" name="type" value="option1" checked>
+    exam
+  </label><br>
+  <label>
+    <input type="radio" name="type" value="option2">
+    other
+  </label>
+  </fieldset>
+  Total:  <input type="number" name="total" required><br>
+  Correct:  <input type="number" name="correct" required><br>
+  Incorrect:  <input type="number" name="incorrect" required><br>
+  Time(min):  <input type="number" name="time"><br>
+  Notes: <input type="text" name="entry_text"><br>
   <input type="submit" value="Submit">
 </form>
